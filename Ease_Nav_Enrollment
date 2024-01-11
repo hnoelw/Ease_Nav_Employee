@@ -1,0 +1,29 @@
+function myFunction() {
+  var spreadsheet = SpreadsheetApp.getActive();
+  
+  //Paste relationship
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('C2:C').activate();
+  spreadsheet.getRange('Paste_From_Ease!J2:J').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste last name
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('D2:D').activate();
+  spreadsheet.getRange('Paste_From_Ease!F2:F').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste first name
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('E2:E').activate();
+  spreadsheet.getRange('Paste_From_Ease!D2:D').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste plan name
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('F2:F').activate();
+  spreadsheet.getRange('Paste_From_Ease!BS2:BS').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste effective date
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('G2:G').activate();
+  spreadsheet.getRange('Paste_From_Ease!BU2:BU').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+}
