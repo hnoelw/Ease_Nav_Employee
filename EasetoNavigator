@@ -1,0 +1,141 @@
+function EasetoNavigator() {
+  var spreadsheet = SpreadsheetApp.getActive();
+
+  //Paste first name
+  spreadsheet.getRange('D2:D').activate;
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('E2:E').activate();
+  spreadsheet.getRange('Paste_Ease_Data!D2:D').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste middle name
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('F2:F').activate();
+  spreadsheet.getRange('Paste_Ease_Data!E2:E').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste last name
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('D2:D').activate();
+  spreadsheet.getRange('Paste_Ease_Data!F2:F').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste relationship
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('C2:C').activate();
+  spreadsheet.getRange('Paste_Ease_Data!G2:G').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste employee id
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('AL2:AL').activate();
+  spreadsheet.getRange('Paste_Ease_Data!B2:B').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste location/office
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('O2:O').activate();
+  spreadsheet.getRange('Paste_Ease_Data!C2:C').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste sex
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('I2:I').activate();
+  spreadsheet.getRange('Paste_Ease_Data!J2:J').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste gender identity
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('AU2:AU').activate();
+  spreadsheet.getRange('Paste_Ease_Data!K2:K').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste DOB
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('H2:H').activate();
+  spreadsheet.getRange('Paste_Ease_Data!M2:M').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste race
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('BB2:BB').activate();
+  spreadsheet.getRange('Paste_Ease_Data!N2:N').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste address (1,2, city, state, zip, county, country)
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('AB2:AH').activate();
+  spreadsheet.getRange('Paste_Ease_Data!P2:V').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste emails
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('P2:Q').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AA2:AB').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste hire date
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('J2:J').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AE2:AE').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste hire date
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('BJ2:BJ').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AE2:AE').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste termination date and type/reason
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('BL2:BM').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AF2:AG').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste division
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('M2:M').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AI2:AI').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste job class
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('K2:K').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AJ2:AJ').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste job title
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('L2:L').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AK2:AK').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+  spreadsheet.getRange('AO2:AO').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AK2:AK').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste marital status
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('AY2:AY').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AL2:AL').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste job class
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('K2:K').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AJ2:AJ').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste scheduled hours
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('U2:U').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AP2:AP').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste tobacco user
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('AZ2:AZ').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AY2:AY').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste W2 Wages
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('Z2:Z').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AS2:AS').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste disabled
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('BF2:BF').activate();
+  spreadsheet.getRange('Paste_Ease_Data!AZ2:AZ').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste payroll id
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('AM2:AM').activate();
+  spreadsheet.getRange('Paste_Ease_Data!BN2:BN').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste payroll group
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('R2:R').activate();
+  spreadsheet.getRange('Paste_Ease_Data!BO2:BO').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+
+  //paste phone numbers
+  spreadsheet.setActiveSheet(spreadsheet.getSheetByName('Copy_For_Navigator'), true);
+  spreadsheet.getRange('AI2:AI').activate();
+  spreadsheet.getRange('Paste_Ease_Data!X2:X').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_NORMAL, false);
+};
